@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <link rel="stylesheet" href="styles/CSS/css-reset.css" />
+    <link rel="stylesheet" href="styles/CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+
+    <div class="card-rating">
+      <div class="card-rating__icon-cont">
+        <img src="images/icon-star.svg" alt="icon" class="card-rating__icon" />
+      </div>
+      <h1 class="card-rating__header">How did we do?</h1>
+      <p class="card-rating__desc">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <div class="card-rating__btns">
+        <label for="one" class="card-rating__btn"
+          >1
+          <input type="radio" class="card-rating__radio" id="one" name="rating" value="1" />
+        </label>
+        <label for="two" class="card-rating__btn"
+          >2
+          <input type="radio" class="card-rating__radio" id="two" name="rating" value="2" />
+        </label>
+        <label for="three" class="card-rating__btn"
+          >3
+          <input type="radio" class="card-rating__radio" id="three" name="rating" value="3" />
+        </label>
+        <label for="four" class="card-rating__btn"
+          >4
+          <input type="radio" class="card-rating__radio" id="four" name="rating" value="4" />
+        </label>
+        <label for="five" class="card-rating__btn"
+          >5
+          <input type="radio" class="card-rating__radio" id="five" name="rating" value="5" />
+        </label>
+      </div>
+      <button class="card-rating__submit" onclick="submitRating()">Submit</button>
+    </div>
+
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+    <div class="card-submitted">
+      <img src="images/illustration-thank-you.svg" alt="img" class="card-submitted__img" />
+      <div class="card-submitted__rating">You selected <span class="card-submitted__rating-number"></span> out of 5</div>
+      <h1 class="card-submitted__title">Thank you!</h1>
+      <p class="card-submitted__desc">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.linkedin.com/in/gilangr1440/">Gilang Ramadhan</a>.</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
